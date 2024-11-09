@@ -30,10 +30,10 @@ const Footer = () => {
             <ul>
             <h2>Quick Links</h2>
               <li><Link to="/">Home</Link></li>
-              <li><Link to="/about">About</Link></li>
-              <li><Link to="/listings">Listings</Link></li>
-              <li><Link to="/services">Services</Link></li>
-              <li><Link to="/blogs">Blogs</Link></li>
+              <li><Link to="/">About</Link></li>
+              <li><Link to="/">Listings</Link></li>
+              <li><Link to="/">Services</Link></li>
+              <li><Link to="/">Blogs</Link></li>
             </ul>
 </div>
 <div className='footer-box4'>
@@ -41,9 +41,9 @@ const Footer = () => {
         
             <ul>
             <h2>Services</h2>
-              <li><Link to="/services/residential">Residential Construction</Link></li>
-              <li><Link to="/services/commercial">Commercial Construction</Link></li>
-              <li><Link to="/services/project-management">Project Management</Link></li>
+              <li><Link to="/">Residential Construction</Link></li>
+              <li><Link to="/">Commercial Construction</Link></li>
+              <li><Link to="/">Project Management</Link></li>
             </ul>
           </div>
           
@@ -79,9 +79,9 @@ const Footer = () => {
           </div>
           <div className="footer-copy-right-left">
             <ul>
-              <li><Link to="/term-condition">Terms and Conditions</Link></li>
-              <li><Link to="/privacy-policy">Privacy Policy</Link></li>
-              <li><Link to="/disclaimer">Disclaimer</Link></li>
+              <li><Link to="/">Terms and Conditions</Link></li>
+              <li><Link to="/">Privacy Policy</Link></li>
+              <li><Link to="/">Disclaimer</Link></li>
             </ul>
           </div>
         </div>

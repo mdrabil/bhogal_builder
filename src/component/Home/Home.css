@@ -3,8 +3,8 @@
   .main-home-box {
     width: 100%;
     height: 100vh;
-    background-color: var(--bg-color);
-/* background-image: var(--linear-color); */
+    /* background-color: var(--bg-color); */
+background-image: var(--linear-color);
     border-bottom-right-radius: 800px;
     border-bottom-left-radius: 800px;
   }

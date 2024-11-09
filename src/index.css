@@ -11,7 +11,7 @@
 
 :root {
   --main-color: #BC2B2C;
-  --linear-color: linear-gradient( #F8C2C3 0%, #D61315 30%);
+  --linear-color: linear-gradient( #fbf7f7 , #efc3c3 );
   --circle-color: linear-gradient(0deg, #B90001 100%, #BC2B2C 0%);
   --bg-color: #FAC6C7;
   --footer-color: rgba(255, 84, 85, 0.1); /* 10% opacity */

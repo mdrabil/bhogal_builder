@@ -99,7 +99,7 @@ const Home = () => {
           </li>
           <li>
             <Link
-              to="/blogs"
+              to="/"
               className={activeLink === 'Blogs' ? 'active-link' : ''}
               onClick={() => handleLinkClick('Blogs')}
             >
