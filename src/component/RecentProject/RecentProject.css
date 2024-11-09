@@ -1,61 +1,73 @@
 /* Container Styles */
 .recent-project-box {
-    padding:0 4rem;
-  width: 100%;
-    color: #333;
+  padding:0 4rem;
+width: 100%;
+  color: #333;
 
-  }
-  
-  /* Heading Styles */
-  .heading span {
-    font-size: 1rem;
-    color: var(--main-color);
-    display: block;
-    margin: 1rem;
+}
+
+/* Heading Styles */
+.heading span {
+  font-size: 1rem;
+  color: var(--main-color);
+  display: block;
+  margin: 1rem;
 text-transform: uppercase;
-  }
+}
+
+/* Top Section */
+.recent-top-box {
+  display: flex;
+  /* justify-content: space-around; */
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  /* flex-wrap: wrap; */
+  width: 85%;
+}
+.recent-top-box .recent-left{
+  width: 500px;
+}
+.recent-left h1 {
+  font-size: 2rem;
+  color:black;
+  font-weight: 600;
+}
+
+.recent-left p {
+  color: #666;
+  font-size: 1rem;
+}
+.recent-right{
+  display: flex;
+}
+.recent-btn {
+  padding: 0.7rem 1.5rem;
+  background-color:var(--main-color);
+  color: #fff;
+  border-radius: 20px;
+  margin: 0.5rem;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.3s;
+}
+
+.recent-btn:hover {
+  background-color: #e65500;
+}
   
-  /* Top Section */
-  .recent-top-box {
-    display: flex;
-    /* justify-content: space-around; */
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 2rem;
-    /* flex-wrap: wrap; */
-    width: 85%;
-  }
-  .recent-top-box .recent-left{
-    width: 500px;
-  }
-  .recent-left h1 {
-    font-size: 2rem;
-    color:black;
-    font-weight: 600;
-  }
-  
-  .recent-left p {
-    color: #666;
-    font-size: 1rem;
-  }
-  .recent-right{
-    display: flex;
-  }
-  .recent-btn {
-    padding: 0.7rem 1.5rem;
-    background-color:var(--main-color);
-    color: #fff;
-    border-radius: 20px;
-    margin: 0.5rem;
-    cursor: pointer;
-    font-size: 0.9rem;
-    transition: background-color 0.3s;
-  }
-  
-  .recent-btn:hover {
-    background-color: #e65500;
-  }
-  
+
+
+
+
+
+
+
+
+
+
+
+
   /* Scrollable Boxes */
   .recent-boxes-scroll {
     display: flex;
@@ -174,3 +186,11 @@ text-transform: uppercase;
     position: relative;
   }
   
+
+
+  @media (max-width:400px) {
+    
+    .recent-top-box .recent-left{
+      width: 300px;
+    }
+  }

@@ -116,12 +116,16 @@ padding-top: 10px;
     padding: 1rem;
     font-size: 0.9rem;
     background-color: black;
+    gap: 10px;
   }
   
   .footer-copy-right-left ul {
     display: flex;
     gap: 1rem;
     list-style: none;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-between;
     padding: 0;
   }
   
@@ -131,8 +135,12 @@ padding-top: 10px;
   }
   
   @media (max-width: 768px) {
+    .footer-copy-right{
+      flex-direction: column-reverse;
+    }
     .footer-content {
       flex-direction: column;
+
     }
   }
   
