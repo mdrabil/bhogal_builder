@@ -1,0 +1,23 @@
+.header{
+    width: 100%;
+    padding: 10px 70px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: var(--main-color);
+}
+
+.header .header-top{
+    display: flex;
+    gap: 30px;
+    color: white;
+    align-items: center;
+}
+
+.header .header-top div{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  font-weight: 200;
+
+}

@@ -1,0 +1,138 @@
+.footer {
+    background-color:var(--footer-color);
+
+
+
+  }
+  
+  .main-footer-box {
+    display: flex;
+    flex-direction: column;
+
+  }
+  
+  .footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    /* display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(500px,1fr)); */
+    gap: 2rem;
+    padding: 40px ;
+
+    
+  }
+  .footer-box1{
+   
+    display: flex;
+   gap: 20px;
+    justify-content: center;
+    flex-direction: column;
+}
+.footer-box1 img{
+    width: 150px;
+}
+.footer-box2{
+
+  display: flex;
+justify-content: space-between;
+
+
+}
+
+
+
+
+
+  .footer-content h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .footer-content ul {
+    list-style: none;
+    padding: 10px;
+  
+  }
+  
+  .footer-content ul li {
+    margin: 0.5rem 0;
+  }
+  
+  .footer-content ul li a {
+padding: 20px 0;
+    text-decoration: none;
+  }
+  
+  .footer-content input[type="email"] {
+    padding: 0.5rem;
+    width: 100%;
+    /* max-width: 250px; */
+background-color: transparent;
+margin-left: 10px;
+outline: none;
+border: none;
+   
+  }
+  
+  .newsletter-submit {
+    background: var(--main-color);
+    border: none;
+
+    border-radius: 50%;
+  
+    height: 50px;
+    width: 60px;
+    cursor: pointer;
+  }
+  
+  .footer-box3 form{
+    border-bottom: 10px;
+background-color: white;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 30px;
+    padding: 0 5px;
+  }
+  .footer-box3 h3{
+padding-top: 10px;
+  }
+  .social-icons{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 20px 0;
+  }
+  .social-icons a {
+    margin-right: 0.5rem;
+  }
+  
+  .footer-copy-right {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border-top: 1px solid #555;
+    padding: 1rem;
+    font-size: 0.9rem;
+    background-color: black;
+  }
+  
+  .footer-copy-right-left ul {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-copy-right-left ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  @media (max-width: 768px) {
+    .footer-content {
+      flex-direction: column;
+    }
+  }
+  

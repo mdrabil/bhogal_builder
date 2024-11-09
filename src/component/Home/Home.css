@@ -1,0 +1,312 @@
+
+  /* General styles */
+  .main-home-box {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--bg-color);
+/* background-image: var(--linear-color); */
+    border-bottom-right-radius: 800px;
+    border-bottom-left-radius: 800px;
+  }
+
+  .home-top-content {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0px 100px;
+    background-color: white;
+  }
+  
+  .home-top-content .home-logo img {
+    width: 120px;
+  }
+  
+  .navbar ul {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+    align-items: center;
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    color: var(--font-color);
+ 
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .navbar a:hover {
+    background-color: var(--main-color);
+    color: #ffffff;
+  }
+  
+  /* Active link styling */
+ .navbar .active-link {
+    background-color: var(--bg-color);
+    color:black;
+  }
+  
+
+
+  
+  .menu-icon {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .menu-icon.active {
+    transform: rotate(90deg);
+  }
+  
+
+  
+
+
+
+
+
+    
+  /* Mobile view */
+  @media (max-width: 1280px) {
+
+    .menu-icon {
+      display: block;
+    }
+  
+    .navbar {
+      display: none;
+      flex-direction: column;
+      position: fixed;
+      top: 0;
+      right: 0;
+      background-color: #fff;
+      height: 100vh;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transform: translateY(-100%);
+      transition: transform 0.3s ease;
+      z-index: 10;
+    }
+  
+    .navbar.open {
+      display: flex;
+      transform: translateY(0);
+    }
+  
+    .navbar ul {
+        margin: 60px 20px;
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .navbar ul li {
+      padding: 10px 0;
+      text-align: center;
+    }
+  }
+  
+  /* Responsive Navbar */
+ 
+  
+  .home-middle-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding: 20px 100px;
+    gap: 50px;
+    /* min-height: 100vh; */
+  
+  }
+  /* Right Section */
+  .home-right {
+    width: 40%;
+    text-align: center;
+    /* background-color: red; */
+    margin-top: 20px;
+
+  }
+  
+  .home-right h1 {
+    font-size: 2.5rem;
+    color: var(--font-color);
+    font-weight: 500;
+  }
+  
+  .home-right p {
+    color: var(--font-color);
+  }
+  
+  /* Image Carousel */
+  .home-image-scroll {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 20px;
+     
+  }
+  
+  .home-left-icon, .home-right-icon {
+    font-size: 24px;
+    cursor: pointer;
+    color: var(--main-color);
+    padding: 5px;
+    background-color:white;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .home-image-display-scroll {
+    /* position: relative; */
+    display: flex;
+    align-items: center;
+justify-content: space-between;
+   object-fit: cover;
+   background-size: cover;
+    width: 400px;
+    height: 350px;
+    border-radius: 10px;
+ background-position: center;
+ 
+    background-size: cover;
+   
+
+  }
+  
+  
+  
+  .scroll-indicators {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    /* width: 200px; */
+   
+  }
+  
+  .scroll-indicators span {
+    width: 80px;
+    height: 4px;
+    margin: 0 3px;
+    background-color:var(--main-color);
+    border-radius: 10px;
+    display: inline-block;
+  }
+  
+  .scroll-indicators .active {
+    background-color: var(--scroll-indicator-active);
+  }  
+  
+
+
+  .scroll-indicators {
+    display: flex;
+    gap: 8px;
+    margin-top: 10px;
+  }
+  
+  .scroll-indicators span {
+    display: inline-block;
+    width: 10px;
+    height: 5px;
+    background-color: lightgray;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .scroll-indicators span.active {
+    background-color: var(--main-color); /* Color for active indicator */
+  }
+  /* Left Section (Login Form) */
+  .home-left {
+    width: 35%;
+    background: white;
+    border-radius: 10px;
+    padding: 20px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .home-login h3 {
+    color: var(--main-color);
+    font-weight: 400;
+    padding:10px 20px;
+  }
+  
+  .home-login hr {
+   
+    height: 3px;
+    width: 100%;
+    color: var(--main-color);
+    background-color: var(--main-color);
+
+  }
+  
+  .home-login form {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 10px;
+  }
+  
+  .home-login select {
+    padding: 10px 20px;
+  }
+  .home-login form input,
+  .home-login form select,
+  .home-login form button {
+    margin: 10px;
+    padding: 14px;
+    /* border: 1px solid #ccc; */
+    border-radius: 20px;
+    background-color: #d1d1d1;
+  
+  }
+  
+  .home-login form button {
+    background-color: var(--main-color);
+    color: white;
+    cursor: pointer;
+  }
+  
+
+  .home-bottom-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+
+
+  /* Responsive Styles */
+  @media (max-width: 808px) {
+    .home-middle-box {
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+    }
+  
+    .home-right, .home-left {
+      width: 90%;
+      /* background-color: red; */
+      margin-bottom: 10px;
+    }
+  
+    .home-right h1 {
+      font-size: 1.5rem;
+    }
+  }
+  
+
+
+
+

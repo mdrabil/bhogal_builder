@@ -1,0 +1,43 @@
+.company-wrap {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .heading {
+    font-size: 1r.7m;
+   
+    margin: 20px;
+  }
+  
+  .wrap-company-logo {
+    display: flex;
+    overflow-x: auto;
+    align-items: center;
+    justify-content: space-around;
+    gap: 50px;
+    padding: 10px;
+    scroll-behavior: smooth; /* Enables smooth scrolling */
+  
+  }
+  
+  .wrap-company-logo img {
+    width: 100px; /* Adjust width as needed */
+    height: auto;
+    /* flex-shrink: 0; */
+    transition: transform 0.3s ease;
+  }
+  
+  .wrap-company-logo img:hover {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+  }
+  
+  /* Optional: Hide scrollbar for a cleaner look */
+  .wrap-company-logo::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .wrap-company-logo {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;     /* Firefox */
+  }
+  
