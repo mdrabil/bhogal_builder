@@ -42,7 +42,8 @@ const Home = () => {
     setCurrentImageIndex(index);
   };
   return (
-    <div className="main-home-box">
+<div>
+<div className="main-home-box">
  <div className="home-top-content">
       <div className="home-logo">
         <img src={logo} alt="Company Logo" />
@@ -170,13 +171,14 @@ const Home = () => {
     <div className="home-bottom-box">
       <Images/>
     </div>
+    </div>
     <Companies/>
     <WhoAreWe/>
     <RecentProject/>
     <Ourservice/>
     <NaighbarWood/>
     <Footer/>
-    </div>
+</div>
   );
 };
 

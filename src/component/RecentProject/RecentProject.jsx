@@ -31,8 +31,8 @@ const RecentProject = () => {
         icons: `${box2icon}`,
       iconsname: 'Discounted Price',
       price: 3450,
-      title: 'Charming Cottage in the Meddow',
-      desc: '1508 Centennial Farm RoadHarian 51537'
+      title: 'Charming Cottage in the ',
+      desc: '1508 Cen Farm RoadHarian 51537'
     },
     {
       img: `${box4img}`,

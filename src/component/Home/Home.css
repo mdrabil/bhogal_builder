@@ -2,7 +2,7 @@
   /* General styles */
   .main-home-box {
     width: 100%;
-    height: 100vh;
+    height: 100%;
     /* background-color: var(--bg-color); */
 background-image: var(--linear-color);
     border-bottom-right-radius: 800px;
@@ -64,51 +64,6 @@ background-image: var(--linear-color);
   }
   
 
-  
-
-
-
-
-
-    
-  /* Mobile view */
-  @media (max-width: 1280px) {
-
-    .menu-icon {
-      display: block;
-    }
-  
-    .navbar {
-      display: none;
-      flex-direction: column;
-      position: fixed;
-      top: 0;
-      right: 0;
-      background-color: #fff;
-      height: 100vh;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      transform: translateY(-100%);
-      transition: transform 0.3s ease;
-      z-index: 10;
-    }
-  
-    .navbar.open {
-      display: flex;
-      transform: translateY(0);
-    }
-  
-    .navbar ul {
-        margin: 60px 20px;
-      flex-direction: column;
-      gap: 10px;
-    }
-  
-    .navbar ul li {
-      padding: 10px 0;
-      text-align: center;
-    }
-  }
-  
   /* Responsive Navbar */
  
   
@@ -131,6 +86,7 @@ background-image: var(--linear-color);
 
   }
   
+
   .home-right h1 {
     font-size: 2.5rem;
     color: var(--font-color);
@@ -287,7 +243,47 @@ justify-content: space-between;
 
 
 
-
+  /* Mobile view */
+  @media (max-width: 1280px) {
+.home-middle-box{
+  padding: 20px;
+}
+    .menu-icon {
+      display: block;
+    }
+  .home-right{
+    width: 60%;
+  }
+    .navbar {
+      display: none;
+      flex-direction: column;
+      position: fixed;
+      top: 0;
+      right: 0;
+      background-color: #fff;
+      height: 100vh;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transform: translateY(-100%);
+      transition: transform 0.3s ease;
+      z-index: 10;
+    }
+  
+    .navbar.open {
+      display: flex;
+      transform: translateY(0);
+    }
+  
+    .navbar ul {
+        margin: 60px 20px;
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .navbar ul li {
+      padding: 10px 0;
+      text-align: center;
+    }
+  }
   /* Responsive Styles */
   @media (max-width: 808px) {
     .home-middle-box {

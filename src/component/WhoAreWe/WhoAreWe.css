@@ -38,6 +38,7 @@ justify-content: space-between;
   .feature-box {
     display: flex;
     align-items: center;
+
     gap: 30px;
     margin: 1.5rem 0;
     background-color: white;
@@ -132,7 +133,15 @@ height: 100%;
     .who-are-right-box {
       padding: 0 10px;
     }
+
+    .feature-box{
+      flex-direction: column;
   
+      text-align: center;
+    }
+  .small-images{
+    margin: 0;
+  }
     .who-are-heading {
       font-size: 1.4rem;
     }
